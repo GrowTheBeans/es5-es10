@@ -1,1 +1,3 @@
-console.log(3)
+/**
+ * apply()或call() 扩充函数赖以运行的作用域
+ */
