@@ -2,10 +2,11 @@ import path from 'path'
 import webpack from 'webpack'
 export default ({
   mode: 'development',
-  entry: ['webpack-hot-middleware/client?noInfo=true&reload=true&timeout=100', './js/index.js'],
+  entry: './js/index.js',
   output: {
-    path: path.join(__dirname, '/static/'),
-    filename: 'js/[name].[hash:8].js'
+    path: path.resolve(__dirname, "dist"),
+    filename: 'index.min.js',
+    publicPath: '/static/'
   },
   module: {
     rules: [
@@ -18,7 +19,12 @@ export default ({
       }
     ]
   },
+  devServer: {
+    hot: true
+  },
+  devtool: 'source-map',
   plugins: [
+    new webpack.ProgressPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ]
 })

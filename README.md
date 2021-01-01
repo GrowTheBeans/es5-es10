@@ -44,6 +44,8 @@
 
 - 开发环境和生产环境中打出来的文件是不一样的
 
+- [参考文档](https://v4.webpack.docschina.org/concepts/#browser-compatibility)
+
 ```js
 const path = require('path');    // 路径 node API
 module.exports = {
@@ -88,4 +90,6 @@ module.exports = {
 
 > 文件说明
 
-- ``
+- `js/index.js` 文件是进行`babel`编译后
+
+- `static/lesson-01.js` 文件是静态，不支持新`ECMASCript`语法
