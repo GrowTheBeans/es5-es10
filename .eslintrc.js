@@ -10,7 +10,7 @@ module.exports = {
         'BigInt':true
     },
     "parserOptions": {
-        "ecmaVersion": 2019
+        "ecmaVersion": 2021
     },
     "rules": {
     }
