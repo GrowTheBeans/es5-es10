@@ -60,7 +60,7 @@ module.exports = {
 
 - **工作原理：** 是把一种代码转换成另一种代码
 
-![avatar](/image/babel.jpg)
+![avatar](/static/image/babel.jpg)
 
 - `babel`把原始代码转成抽象语法树（AST）然后再进行转换还原成代码
 
